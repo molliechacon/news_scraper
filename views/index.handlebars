@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        {{#each articles}}
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{this.headline}}</h3>
+                        <button id="save-article-button" class="btn btn-default" type="submit">Save</button>
+                        <button id="delete-article-button" class="btn btn-default" type="submit">Delete</button>
+                    </div>
+                    <div class="panel-body">
+                        {{this.summary}}
+                        {{this.url}}
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
